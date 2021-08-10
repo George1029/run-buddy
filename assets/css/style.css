@@ -23,13 +23,13 @@ header {
 
   header nav {
       float: right;
-      margin: 7px 0;
+      margin: 0 0;
   }
   header nav ul li {
       display: inline;
   }
  header nav ul li a {
-    margin: 0 30px;
+    margin: 0 0px;
     font-weight: lighter;
     font-size: 22px;
  }
@@ -39,6 +39,9 @@ header {
     padding: 0;
     box-sizing: border-box;
   }
+
+  
+
 
   footer {
       background: #fce138;
@@ -62,3 +65,52 @@ header {
       color: #024e76;
   }
 
+  section {
+    padding: 60px;
+  }
+
+  /* hero style start */
+  .hero {
+    background-image: url("../images/hero-bg.jpeg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+    .hero-form { 
+        background-color: #fce138;
+        color: #024e76;
+        padding: 60px;
+        width: 100%;
+        font-weight: bold;
+        position: absolute;
+
+    }
+    .hero-form p {
+        margin: 5px 0 15px 0;
+      }
+
+      .form-input {
+        color: #024e76;
+        font-size: 16px;
+        padding: 7px 15px;
+        width: 100%;
+        margin-bottom: 15px;
+        display: block;
+        border: 1px solid #024e76;
+      }  
+
+      .hero-form h3 {
+        font-size: 24px;
+        margin: 0;
+        border: #024e76;
+        font-weight: bold;
+
+      }
+      
+
+      .hero-form label {
+        margin: 0 0px;
+        border: #fce138;
+      }
+/* hero style end */
