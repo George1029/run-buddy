@@ -111,7 +111,7 @@ header {
 
       .hero-form label {
         margin: 0 5px;
-        border: #fce138;
+        
       }
 
       .hero-form button {
@@ -164,6 +164,7 @@ header {
 
     .steps img {
           width: 15%;
+          margin: 10px 0;
       }
 
 
@@ -182,10 +183,11 @@ header {
       .steps span {
         font-size: 38px;
       }
-      
-      .trainer h2 {
+
+
+      .trainers  {
         text-align: center;
-       float: center;
+       
       }
 
       .trainer {
@@ -195,6 +197,7 @@ header {
         color: #fce138;
         overflow: auto;
       }
+
       .trainer img {
         width: 35%;
         float: left;
