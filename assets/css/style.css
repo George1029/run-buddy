@@ -66,8 +66,12 @@ header {
   }
 
   section {
-    padding: 60px;  
+    padding: 60px;
   }
+  section {
+  display: block;
+  }
+  
   
   .hero {
     background-image: url("../images/hero-bg.jpeg");
