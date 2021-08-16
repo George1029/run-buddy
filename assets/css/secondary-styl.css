@@ -5,7 +5,7 @@
     margin-bottom: 40px;
   }
   .hero {
-    background-image: url("../images/hero-bg.jpeg");
+    background-image: url("../images/flipped-hero-image.jpeg");
     height: 600px;
     background-size: cover;
     background-position: center;
