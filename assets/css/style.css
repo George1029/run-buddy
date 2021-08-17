@@ -4,11 +4,18 @@ body{
 }
 
 header {
+      background-image: url("../images/hero-bg.jpg");
+      background-size: cover;
+      background-position: 80%;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       background-color: #39a6b2;
       padding: 10px 15px 20px 25px;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      background-attachment: fixed;
   }
 
   header h1 {
@@ -16,6 +23,8 @@ header {
       font-size: 36px;
       color: #fce138;
       margin: 0;  
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
   }
 
   header a {
@@ -27,11 +36,13 @@ header {
       margin: 7px 0;
   }
 
- header nav ul li a {
+ header nav ul li a :hover {
     
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
  }
 
   header nav ul { 
@@ -87,9 +98,10 @@ header {
     background-image: url("../images/flipped-hero-image.jpeg");
     height: 600px;
     background-size: cover;
-    background-position: center;
+    background-position: 80%;
     position: relative;
     align-items: flex-start;
+    background-attachment: fixed;
   }
   
 
@@ -100,6 +112,8 @@ header {
         border: solid 3px #024e76;
         width: 40%;
         margin: 3.5%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
 
 
       }
@@ -117,6 +131,8 @@ header {
         font-style: italic;
         font-size: 55px;
         color: #fce138;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
       }
 
     .hero-form p {
@@ -131,6 +147,8 @@ header {
         margin-bottom: 15px;
         display: block;
         border: 1px solid #024e76;
+        border-radius: 10px;
+        background-color: rgba(255,255,255, 0.75);
       }  
 
       .hero-form h3 {
@@ -144,12 +162,13 @@ header {
         
       }
 
-      .hero-form button {
+      .hero-form button:hover {
         color: #fce138;
         background-color: #024e76;
         border: none;
         padding: 10px 20px;
         font-size: 16px;
+        border-radius: 10px;
       }
 /* hero style end */
 
@@ -203,11 +222,20 @@ header {
       margin: 50px auto;
       padding-bottom: 50px;
       width: 80%;
-      border-bottom: 1px solid #39a6b2;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+      border-bottom: 1px solid #39a6b2;
+    }
+
+    .step:nth-child(even) {
+      border-bottom: 1px solid #39a6b2;
+
+    }
+    
+    .step:not(:last-child) {
+      border-bottom: 1px solid #39a6b2;
     }
     
     .steps { 
@@ -351,9 +379,16 @@ header {
         width: 100%;
         margin-bottom: 15px;
         margin-top: 5px;
+        border-radius: 10px;
       }
 
-      .contact-form button {
+      .contact-form input:focus, .contact-form textarea:focus {
+        background-color: rgba(255,255,255, 1);
+        outline: none;
+
+      }
+
+      .contact-form button :hover{
         width: 100%;
         border: none;
         background: #fce138;
@@ -361,6 +396,7 @@ header {
         text-align: center;
         padding: 15px 0;
         font-size: 16px;
+        border-radius: 10px;
       }
 
       /* Reach Out Styles End */
@@ -381,6 +417,7 @@ header {
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 {
@@ -483,4 +520,9 @@ header {
     order: 3;
   }
   
+}
+
+form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
