@@ -13,4 +13,5 @@ https://George1029.github.io/run-buddy/
 ## Contribution
 Made with ❤️ by George Ellison
  
-### ©️2019 Run Buddy, Inc 
+### Run Buddy, Inc.
+
